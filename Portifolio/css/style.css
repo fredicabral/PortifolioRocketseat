@@ -14,7 +14,8 @@ body {
   height: 100vh;
   grid-template-areas:
     "aside main"
-    "aside main";
+    "aside main"
+    "footer footer";
   grid-template-columns: 430px 1fr;
 }
 
@@ -24,6 +25,11 @@ aside {
 
 main {
   grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+  text-align: center;
 }
 
 .box {
@@ -86,7 +92,8 @@ main {
   padding: 25px 30px;
 }
 
-.tecnologia h2 {
+.tecnologia h2,
+.experiencia h2 {
   font-size: 20px;
   padding-bottom: 15px;
   line-height: 0px
@@ -111,6 +118,21 @@ main {
   text-align: center;
 }
 
+.experiencia ul {
+  margin: 5px 0px;
+  padding: 0px;
+}
+
+.experiencia ul li {
+  padding: 10px 0px;
+}
+
+.experiencia p {
+  font-size: 13px;
+  padding: 0px;
+  margin: 2px 0px;
+}
+
 .header-box {
   display: flex;
   flex-direction: row;
@@ -133,11 +155,22 @@ main {
   color: #837E9F;
 }
 
-.projetos A,
 .links A:hover {
   transition: 0.4s;
   color: yellowgreen;
 }
+
+.projetos A:hover {
+  transition: 0.4s;
+  color: yellowgreen;
+}
+
+.projetos,
+.links A:active {
+  transition: 0.4s;
+  color: #837E9F;
+}
+
 
 .lista-projetos {
   list-style: none;
@@ -189,10 +222,11 @@ main {
   padding: 40px 0px;
 }
 
-.posts  img {
+.posts img {
   width: 90px;
   height: 90px;
-  border-radius: 15px;
+  border-radius: 100%;
   margin: 0 20px;
   float: left;
+  border: 2px solid greenyellow;
 }
